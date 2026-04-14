@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 01:55:17 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ4OzIwMjYtMDQtMTM7IjAxOjI2OjE1ICI7Mjg1OQ=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ4OzIwMjYtMDQtMTM7IjAxOjU1OjE3ICI7MzsyOTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, largura, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;---C&#225;lculo volume paralelepipedo---&quot;" newline="True"/>
+            <output expression="&quot;Digite o valor da base do paralelepipedo&quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Digite o valor da altura do paralelepipedo&quot;" newline="True"/>
+            <input variable="altura"/>
+            <output expression="&quot;Digite o valor da largura do paralelepipedo&quot;" newline="True"/>
+            <input variable="largura"/>
+            <assign variable="resultado" expression="base * altura * largura"/>
+            <output expression="&quot;O volume do paralelepipedo &#233;: &quot; &amp; resultado &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
