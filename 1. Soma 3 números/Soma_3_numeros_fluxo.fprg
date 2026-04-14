@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 02:03:38 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ4OzIwMjYtMDQtMTM7IjAxOjI2OjE1ICI7Mjg1OQ=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ4OzIwMjYtMDQtMTM7IjAyOjAzOjM4ICI7NDsyOTcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;---Soma de 3 n&#250;meros---&quot;" newline="True"/>
+            <output expression="&quot;Digite o primeiro n&#250;mero para a soma&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero para a soma&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite o terceiro n&#250;mero para a soma&quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="resultado" expression="n1 + n2 + n3"/>
+            <output expression="&quot;O resultado da soma &#233;: &quot; &amp; resultado &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
