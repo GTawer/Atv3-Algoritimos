@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Senha_fluxo"/>
+        <attribute name="authors" value="Gabriel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 10:17:08 "/>
+        <attribute name="created" value="R2FicmllbDtMQVBUT1AtTEVBSUxCMjQ7MjAyNi0wNC0xMzsiMTA6MTE6NDkgIjsyOTE5"/>
+        <attribute name="edited" value="R2FicmllbDtMQVBUT1AtTEVBSUxCMjQ7MjAyNi0wNC0xMzsiMTA6MTc6MDggIjsxOzMwMjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="senha, senhaDigitada, nomeUsuario" type="String" array="False" size=""/>
+            <assign variable="senha" expression="&quot;acb23&quot;"/>
+            <output expression="&quot;Digite o seu nome de usu&#225;rio&quot;" newline="True"/>
+            <input variable="nomeUsuario"/>
+            <output expression="&quot;Digite a senha do usu&#225;rio: &quot;" newline="True"/>
+            <input variable="senhaDigitada"/>
+            <if expression="senhaDigitada == senha">
+                <then>
+                    <output expression="&quot;&#9989; Senha correta!&quot;" newline="True"/>
+                    <output expression="&quot;...Logando...&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#10062; Senha incorreta!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
