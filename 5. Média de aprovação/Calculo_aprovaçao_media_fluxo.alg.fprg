@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Calculo_aprova&#231;ao_media_fluxo.alg"/>
+        <attribute name="authors" value="Gabriel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 10:10:30 "/>
+        <attribute name="created" value="R2FicmllbDtMQVBUT1AtTEVBSUxCMjQ7MjAyNi0wNC0xMzsiMDk6NTQ6NDggIjsyOTMz"/>
+        <attribute name="edited" value="R2FicmllbDtMQVBUT1AtTEVBSUxCMjQ7MjAyNi0wNC0xMzsiMTA6MTA6MzAgIjsxOzMwMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, media" type="Real" array="False" size=""/>
+            <output expression="&quot;--- Descubra suas m&#233;dias de aprova&#231;&#227;o aqui &#55357;&#56541; ---&quot;" newline="True"/>
+            <output expression="&quot;Insira a sua nota final da primeira etapa: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Insira a sua nota final da segunda etapa: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Insira a sua nota final da terceira etapa: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="media" expression="(n1 + n2 + n3) / 3"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;Sua m&#233;dia &#233;: &quot; &amp; media &amp; &quot; Voc&#234; est&#225; aprovado!&#55357;&#56888;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media &gt;= 4">
+                        <then>
+                            <output expression="&quot;Sua m&#233;dia &#233;: &quot; &amp; media &amp; &quot; Voc&#234; est&#225; de recupera&#231;&#227;o!&#55357;&#56896;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sua m&#233;dia &#233;: &quot; &amp; media &amp; &quot; Voc&#234; est&#225; de reprovado! :(&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
