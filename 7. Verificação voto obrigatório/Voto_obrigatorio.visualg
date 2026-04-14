@@ -1,0 +1,31 @@
+algoritmo "Análise de obrigatoriedade de voto"
+
+// Disciplina: Lógica de Programação (LOPAL)
+// Professor: Raul Porto Lopes
+// Autor:Gabriel de Araujo Torres N°08
+// Data atual: 13/04/2026
+
+// Função: Verificar se há obrigatoriedade de voto de acordo com a idade da pessoa.
+
+var
+  idade: inteiro
+
+inicio
+  // Entrada de dados
+  escreval ("--- Confira se o seu voto é obrigatório 🗳️ ---")
+  escreva ("Insira a sua idade: ")
+  leia (idade)
+
+  // Variável
+  se idade < 16 
+  entao
+    escreval("❎ Você ainda não pode votar.")
+  senao se idade >= 18 e idade <= 70 
+  entao
+    escreval("Seu voto é obrigatório.")
+  senao
+    escreva("Seu voto é opcional.")
+  fimse
+  fimse
+
+fimalgoritmo
